@@ -170,7 +170,7 @@ BOOL CDeconvultionSmeshDlg::OnInitDialog()
 	xx_pen.CreatePen(		//аппроксимация
 		PS_SOLID,				//плошная линия
 		2,						//толщина 3 пиксель
-		RGB(200, 255, 0));		//цвет красный
+		RGB(0, 0, 255));		//цвет красный
 
 	pryamougol_with_overlap_pen.CreatePen(		//аппроксимация
 		PS_SOLID,				//плошная линия
@@ -290,9 +290,9 @@ void CDeconvultionSmeshDlg::OnPaint()
 		yp3 = -((double)(XXRect.Height()) / (double)(ymax3 - ymin3));		//Коэффициенты пересчёта координат по У
 
 		///////////////////////////////////////////////РАБОТА С ГРАФИКОМ ФУНКЦИИ/////////////////////////////////////////////////////////////////////////
-		XDcMemory->FillSolidRect(&XRect, RGB(150, 150, 150));			//закрашиваю фон 
-		YDcMemory->FillSolidRect(&YRect, RGB(150, 150, 150));			//закрашиваю фон 
-		XXDcMemory->FillSolidRect(&XXRect, RGB(150, 150, 150));			//закрашиваю фон
+		XDcMemory->FillSolidRect(&XRect, RGB(255, 255, 255));			//закрашиваю фон 
+		YDcMemory->FillSolidRect(&YRect, RGB(255, 255, 255));			//закрашиваю фон 
+		XXDcMemory->FillSolidRect(&XXRect, RGB(255, 255, 255));			//закрашиваю фон
 
 		XDcMemory->SelectObject(&osi_pen);		//выбираем перо
 		YDcMemory->SelectObject(&osi_pen);		//выбираем перо
